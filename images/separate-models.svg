@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+    <!-- Background -->
+    <rect width="1200" height="800" fill="#ffffff"/>
+    
+    <!-- Parent Model Path Title -->
+    <text x="100" y="50" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Parent Model (대분류)</text>
+    
+    <!-- Parent Model Path -->
+    <rect x="50" y="70" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <rect x="220" y="50" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="90" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base-model</text>
+    <text x="310" y="115" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <rect x="450" y="50" width="160" height="100" rx="5" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+    <text x="530" y="85" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#C62828">Parent Model</text>
+    <text x="530" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#C62828">(대분류)</text>
+    <text x="530" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#C62828">Output: 4 classes</text>
+    
+    <rect x="660" y="70" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="730" y="105" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Loss 대분류</text>
+    
+    <!-- Child Models Title -->
+    <text x="100" y="250" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Child Models (소분류)</text>
+    
+    <!-- Child Model 1 -->
+    <rect x="50" y="280" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <rect x="220" y="260" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="300" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base-model</text>
+    <text x="310" y="325" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <rect x="450" y="260" width="160" height="100" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="530" y="295" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[구급] 분류 모델</text>
+    <text x="530" y="315" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 7 classes</text>
+    
+    <rect x="660" y="280" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="730" y="315" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Loss 소분류 1</text>
+    
+    <!-- Child Model 2 -->
+    <rect x="50" y="400" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <rect x="220" y="380" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="420" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base-model</text>
+    <text x="310" y="445" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <rect x="450" y="380" width="160" height="100" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="530" y="415" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[구조] 분류 모델</text>
+    <text x="530" y="435" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 3 classes</text>
+    
+    <rect x="660" y="400" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="730" y="435" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Loss 소분류 2</text>
+    
+    <!-- Child Model 3 -->
+    <rect x="50" y="520" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="555" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <rect x="220" y="500" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="540" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base-model</text>
+    <text x="310" y="565" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <rect x="450" y="500" width="160" height="100" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="530" y="535" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[기타]</text>
+    <text x="530" y="555" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 1 class</text>
+    
+    <rect x="660" y="520" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="730" y="555" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Loss 소분류 3</text>
+    
+    <!-- Child Model 4 -->
+    <rect x="50" y="640" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="675" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <rect x="220" y="620" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="660" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base-model</text>
+    <text x="310" y="685" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <rect x="450" y="620" width="160" height="100" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="530" y="655" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[화재] 분류 모델</text>
+    <text x="530" y="675" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 4 classes</text>
+    
+    <rect x="660" y="640" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="730" y="675" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Loss 소분류 4</text>
+    
+    <!-- Connection Arrows -->
+    <!-- Parent Model Path -->
+    <path d="M170 100 L220 100" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 100 L450 100" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M610 100 L660 100" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Child Model 1 Path -->
+    <path d="M170 310 L220 310" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 310 L450 310" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M610 310 L660 310" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Child Model 2 Path -->
+    <path d="M170 430 L220 430" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 430 L450 430" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M610 430 L660 430" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Child Model 3 Path -->
+    <path d="M170 550 L220 550" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 550 L450 550" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M610 550 L660 550" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Child Model 4 Path -->
+    <path d="M170 670 L220 670" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 670 L450 670" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M610 670 L660 670" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Arrow Marker Definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="50" y="760" width="1100" height="30" rx="5" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1"/>
+    <text x="60" y="780" font-family="Arial" font-size="12">모델 구조: 각각의 모델이 독립적으로 학습됨. Parent Model은 대분류(4개 클래스)를 예측하고, 각 Child Model은 해당하는 소분류를 독립적으로 예측</text>
+</svg>

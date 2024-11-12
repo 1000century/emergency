@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+    <!-- Background -->
+    <rect width="1200" height="300" fill="#ffffff"/>
+    
+    <!-- Input -->
+    <rect x="50" y="120" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="155" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <!-- KcELECTRA Base -->
+    <rect x="220" y="100" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="140" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">ELECTRA-base</text>
+    <text x="310" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">[CLS] token</text>
+    
+    <!-- Linear Layers -->
+    <rect x="450" y="70" width="140" height="60" rx="5" fill="#FFEBEE" stroke="#C62828" stroke-width="2"/>
+    <text x="520" y="95" font-family="Arial" font-size="14" text-anchor="middle" fill="#C62828">Type Classifier</text>
+    <text x="520" y="115" font-family="Arial" font-size="10" text-anchor="middle" fill="#C62828">(hidden_size, 대분류 개수)</text>
+    
+    <rect x="450" y="170" width="140" height="60" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="520" y="195" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">Disaster Classifier</text>
+    <text x="520" y="215" font-family="Arial" font-size="10" text-anchor="middle" fill="#006064">(hidden_size, 소분류 개수)</text>
+    
+    <!-- Loss Calculations -->
+    <rect x="640" y="80" width="140" height="40" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+    <text x="710" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#E65100">Loss_대분류</text>
+    
+    <rect x="640" y="180" width="140" height="40" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="2"/>
+    <text x="710" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#E65100">Loss_소분류</text>
+    
+    <!-- Combined Loss -->
+    <rect x="850" y="120" width="140" height="60" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="920" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#6A1B9A">Total Loss</text>
+    <text x="920" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#6A1B9A">Loss = L대분류 + L소분류</text>
+    
+    <!-- Connection Arrows -->
+    <path d="M170 150 L220 150" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 150 L430 150" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M430 150 L430 100 L450 100" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M430 150 L430 200 L450 200" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Loss Connection Arrows -->
+    <path d="M590 100 L640 100" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M590 200 L640 200" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Loss Combination Arrows -->
+    <path d="M780 100 L830 150 L850 150" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M780 200 L830 150" fill="none" stroke="#666666" stroke-width="2"/>
+    
+    <!-- Arrow Marker Definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="50" y="250" width="1100" height="40" rx="5" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1"/>
+    <text x="60" y="275" font-family="Arial" font-size="12">모델 구조: Input Text → ELECTRA-base([CLS]) → 대분류/소분류 Linear Layer → 각각의 Loss 계산 → Loss 합산</text>
+</svg>

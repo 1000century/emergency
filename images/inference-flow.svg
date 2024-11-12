@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+    <!-- Background -->
+    <rect width="1200" height="500" fill="#ffffff"/>
+    
+    <!-- Input -->
+    <rect x="50" y="200" width="120" height="60" rx="5" fill="#E3F2FD" stroke="#1976D2" stroke-width="2"/>
+    <text x="110" y="235" font-family="Arial" font-size="14" text-anchor="middle" fill="#1976D2">Input Text</text>
+    
+    <!-- Parent Model -->
+    <rect x="220" y="180" width="180" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="310" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#2E7D32">Parent Model</text>
+    <text x="310" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">(대분류)</text>
+    <text x="310" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#2E7D32">Output: 4 classes</text>
+    
+    <!-- Selection Box -->
+    <rect x="450" y="180" width="160" height="100" rx="5" fill="#FFF3E0" stroke="#E65100" stroke-width="2" stroke-dasharray="5,5"/>
+    <text x="530" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#E65100">Model Selection</text>
+    <text x="530" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#E65100">Based on</text>
+    <text x="530" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#E65100">Parent Prediction</text>
+    
+    <!-- Child Models -->
+    <rect x="700" y="50" width="140" height="80" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="770" y="85" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[구급] 분류 모델</text>
+    <text x="770" y="105" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 7 classes</text>
+    
+    <rect x="700" y="150" width="140" height="80" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="770" y="185" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[구조] 분류 모델</text>
+    <text x="770" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 3 classes</text>
+    
+    <rect x="700" y="250" width="140" height="80" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="770" y="285" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[기타]</text>
+    <text x="770" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 1 class</text>
+    
+    <rect x="700" y="350" width="140" height="80" rx="5" fill="#E0F7FA" stroke="#006064" stroke-width="2"/>
+    <text x="770" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="#006064">[화재] 분류 모델</text>
+    <text x="770" y="405" font-family="Arial" font-size="12" text-anchor="middle" fill="#006064">Output: 4 classes</text>
+    
+    <!-- Final Output -->
+    <rect x="900" y="180" width="160" height="100" rx="5" fill="#F3E5F5" stroke="#6A1B9A" stroke-width="2"/>
+    <text x="980" y="220" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#6A1B9A">Final Prediction</text>
+    <text x="980" y="240" font-family="Arial" font-size="12" text-anchor="middle" fill="#6A1B9A">Selected Child Model</text>
+    <text x="980" y="260" font-family="Arial" font-size="12" text-anchor="middle" fill="#6A1B9A">Prediction</text>
+    
+    <!-- Connection Arrows -->
+    <path d="M170 230 L220 230" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M400 230 L450 230" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Selection to Child Model Arrows -->
+    <path d="M610 230 L650 230" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M650 230 L650 90 L700 90" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M650 230 L650 190 L700 190" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M650 230 L650 290 L700 290" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M650 230 L650 390 L700 390" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Child Models to Final Output Arrows -->
+    <path d="M840 90 L870 90 L870 230 L900 230" fill="none" stroke="#666666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M840 190 L870 190 L870 230" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M840 290 L870 290 L870 230" fill="none" stroke="#666666" stroke-width="2"/>
+    <path d="M840 390 L870 390 L870 230" fill="none" stroke="#666666" stroke-width="2"/>
+    
+    <!-- Arrow Marker Definition -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+        </marker>
+    </defs>
+    
+    <!-- Legend -->
+    <rect x="50" y="450" width="1100" height="40" rx="5" fill="#F5F5F5" stroke="#9E9E9E" stroke-width="1"/>
+    <text x="60" y="475" font-family="Arial" font-size="12">추론 과정: Input Text → Parent Model(대분류 예측) → 예측된 대분류에 해당하는 Child Model 선택 → 선택된 Child Model이 소분류 예측 → Final Prediction</text>
+</svg>
