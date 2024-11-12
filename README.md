@@ -39,7 +39,6 @@
 ### 1. KcELECTRA 기반 상황 분류 모델
 #### 1. ![분류모델](/images/horizontal-multitask-electra.svg)
 #### 2. ![분류모델](/images/separate-models.svg)
-####    ![분류모델](/images/inference-flow.svg)
 #### 3. ![분류모델](/images/hierarchical-model.svg)
 
 ### 2. 위치 정보 추출 모델
